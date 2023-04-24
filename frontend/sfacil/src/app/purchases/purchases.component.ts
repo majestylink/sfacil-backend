@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PurchasesService } from '../purchases.service';
 import { Purchase } from '../myModels';
-import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -11,7 +10,6 @@ import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./purchases.component.css']
 })
 export class PurchasesComponent implements OnInit {
-  modalRef: NgbModalRef | undefined;
   
 
   customerId: number;
@@ -19,7 +17,7 @@ export class PurchasesComponent implements OnInit {
   purchases: Purchase[] = [];
   orderedProducts:any = []
 
-  constructor(private route: ActivatedRoute, private purchaseService: PurchasesService, private modalService: NgbModal) {
+  constructor(private route: ActivatedRoute, private purchaseService: PurchasesService) {
     this.customerId = 0;
   }
 
@@ -31,10 +29,6 @@ export class PurchasesComponent implements OnInit {
       console.log(this.purchases);
       
     });
-  }
-
-  openModal(content: any) {
-    this.modalRef = this.modalService.open(content);
   }
 
 }

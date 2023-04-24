@@ -91,15 +91,10 @@
                   </tr>
                 </thead>
                 <tr *ngFor="let purchase of purchases">
-                  <!-- <ng-container *ngFor="let product of purchase.ordered_products">
-                    <ng-container *ngFor="let mattress of product.mattresses">
-                      <td>{{ mattress.quantity }}</td>
-                    </ng-container>
-                  </ng-container> -->
                     <td>{{ purchase.cost ? purchase.cost : 'N/A' }}</td>
                     <td>{{ purchase.fulfilled ? 'Yes' : 'No' }}</td>
                     <td>{{ purchase.created_at | date:'yyyy-MM-dd' }}</td>
-                    <!-- <td><button class="btn btn-primary" (click)="openModal(purchase)">View</button></td> -->
+                    <td><button class="btn btn-primary" (click)="openModal(purchase)">View</button></td>
                   </tr>
               </table>
             </div>
