@@ -10,27 +10,20 @@ class CustomerView(APIView):
 
     def get(self, request):
         customers = Customer.objects.all()
-        print(customers)
         ser = CustomerSerializer(customers, many=True)
-        print(ser.data)
-        data = [
-            {
-                'id': 'number',
-                'name': 'string',
-                'address': 'string',
-                'phone': 'string',
-                'email': 'email',
-                'job': 'job',
-                'location': 'location',
-            },
-            {
-                'id': 'number 1',
-                'name': 'string 1',
-                'address': 'string 1',
-                'phone': 'string 1',
-                'email': 'email 1',
-                'job': 'job 1',
-                'location': 'location 1',
-            }
-        ]
         return ApiResponse(200, message='success', data=ser.data).response()
+
+    def post(self, request):
+        data = request.data
+        # data['image'] = data['image'] if data['image'] else None
+        serializer = CustomerSerializer(data=data)
+        if serializer.is_valid():
+            customer_id = Customer.generate_customer_id()
+            # debt_amount = request.data.get()
+            serializer.save(customer_id=customer_id)
+            return ApiResponse(201, data=serializer.data, message="Customer created successfully").response()
+        return ApiResponse(200, message=serializer.error_messages).response()
+
+    def put(self, request):
+        print("In put method")
+        return ApiResponse(200).response()

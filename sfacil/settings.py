@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c(x3(rbd=^_2s@tnjk*zu(baz7)e8cr^fnn7b7h4(jk6ffwhvc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     'customer',
     'purchase',
     'product',
+    'transaction',
+    'wallet',
+    'inventory',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +137,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+AUTH_USER_MODEL = 'account.User'

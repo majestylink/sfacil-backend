@@ -2,11 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab6dbad1-5cda-4d42-ae8a-69658a18ac89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sfacil/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sfacil/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sfacil/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/customer.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/customer.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/customer/customer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/customer/customer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/customer/customer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/customer/customer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/myModels.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/purchases.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/purchases.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/purchases/purchases.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/purchases/purchases.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/purchases/purchases.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/app/purchases/purchases.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/assets/css/customerStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/assets/css/purchaseStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/sfacil/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0002_product_product_category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0003_product_product_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/purchase/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/migrations/0002_perproduct_delete_mattress_delete_product_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/migrations/0003_rename_products_order_ordered_products.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/migrations/0004_order_cost_alter_perproduct_product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/purchase/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/purchase/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/purchase/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchase/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/purchase/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfacil/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sfacil/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfacil/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sfacil/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/response.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +91,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend/sfacil" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2OcCcE3JIWgPdv0vHbr3IYu8Rq0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,7 +103,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/django/mouvebackend-python" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/sfacil/node_modules/typescript/lib" />
   </component>
   <component name="RunManager">
     <configuration name="sfacil" type="Python.DjangoServer" factoryName="Django server">
@@ -73,10 +145,74 @@
       <workItem from="1682113680955" duration="16150000" />
       <workItem from="1682170286194" duration="598000" />
       <workItem from="1682245213334" duration="1809000" />
+      <workItem from="1689709663445" duration="3495000" />
+      <workItem from="1690013199981" duration="10433000" />
+      <workItem from="1690056669955" duration="60000" />
+      <workItem from="1690731605916" duration="14367000" />
+      <workItem from="1691051057912" duration="10390000" />
+      <workItem from="1691403816226" duration="12344000" />
+      <workItem from="1691504085569" duration="575000" />
+      <workItem from="1691504852750" duration="7285000" />
+      <workItem from="1691694663557" duration="322000" />
+      <workItem from="1692536879224" duration="6433000" />
+      <workItem from="1692606001828" duration="4649000" />
+      <workItem from="1692653913158" duration="905000" />
+      <workItem from="1692811923381" duration="1256000" />
+      <workItem from="1692884086221" duration="622000" />
+      <workItem from="1692948476934" duration="4016000" />
+      <workItem from="1692967672737" duration="4980000" />
+      <workItem from="1693049825649" duration="3223000" />
+      <workItem from="1693221808745" duration="1006000" />
+      <workItem from="1693223624331" duration="3238000" />
+      <workItem from="1693229012565" duration="8388000" />
+      <workItem from="1693259398779" duration="2557000" />
+      <workItem from="1693301212566" duration="4082000" />
+      <workItem from="1693581331813" duration="35000" />
+      <workItem from="1693835183839" duration="1117000" />
+      <workItem from="1693869448610" duration="1589000" />
+      <workItem from="1693916897492" duration="9793000" />
+      <workItem from="1693952267088" duration="2866000" />
+      <workItem from="1694012340625" duration="1065000" />
+      <workItem from="1694017201697" duration="245000" />
+      <workItem from="1694183419129" duration="2009000" />
+      <workItem from="1694290251082" duration="3764000" />
+      <workItem from="1694379385591" duration="4881000" />
+      <workItem from="1694421989051" duration="1203000" />
+      <workItem from="1694472396790" duration="95000" />
+      <workItem from="1694472563536" duration="693000" />
+      <workItem from="1694784073111" duration="439000" />
+      <workItem from="1694810245738" duration="774000" />
+      <workItem from="1695077186537" duration="628000" />
+      <workItem from="1695164551661" duration="3110000" />
+      <workItem from="1695391649141" duration="2489000" />
+      <workItem from="1695474346948" duration="1154000" />
+      <workItem from="1695582226063" duration="614000" />
+      <workItem from="1695588827887" duration="688000" />
+      <workItem from="1695653584804" duration="2251000" />
+      <workItem from="1696070371174" duration="1839000" />
+      <workItem from="1696083831175" duration="3092000" />
+      <workItem from="1696343248883" duration="2103000" />
+      <workItem from="1696439320751" duration="657000" />
+      <workItem from="1696584098785" duration="905000" />
+      <workItem from="1696661926823" duration="39000" />
+      <workItem from="1696662008660" duration="728000" />
+      <workItem from="1696669199993" duration="733000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

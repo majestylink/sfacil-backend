@@ -13,9 +13,10 @@ class ApiResponse:
         404: (False, status.HTTP_404_NOT_FOUND)
     }
 
-    def __init__(self, status_code=200, message=None, data=None):
+    def __init__(self, status_code=200, message=None, data=None, errors=None):
         self.message = message
         self.data = data
+        self.errors = errors
         self.status_code = status_code
 
     def _fetch_status(self):
@@ -23,9 +24,11 @@ class ApiResponse:
 
     def response(self):
         status, status_code = self._fetch_status()
-        response_data = {"status": status, "message": None, "data": None}
+        response_data = {"status": status, "message": None, "data": None, "errors": None}
         if self.message:
             response_data['message'] = self.message
         if self.data or self.data == []:
             response_data['data'] = self.data
+        if self.errors:
+            response_data['errors'] = self.errors
         return Response(response_data, status_code)
