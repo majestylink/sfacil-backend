@@ -31,7 +31,6 @@ class Product(Base):
     def __str__(self) -> str:
         return f'{self.inches} inches - {self.dimensions} => {self.product_category.name}'
 
-
     @staticmethod
     def product_id_exist(product_id):
         products = Product.objects.filter(product_id=product_id)

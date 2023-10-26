@@ -21,7 +21,7 @@ class Customer(Base):
     remaining_credit = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
     class Meta:
-        ordering = ['-created_at']
+        ordering = ['-created_at', '-updated_at']
 
     def __str__(self):
         return self.first_name

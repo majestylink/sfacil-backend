@@ -25,5 +25,26 @@ class CustomerView(APIView):
         return ApiResponse(200, message=serializer.error_messages).response()
 
     def put(self, request):
-        print("In put method")
-        return ApiResponse(200).response()
+        # print("In put method")
+        # print(request.data)
+        data = request.data
+
+        try:
+            customer_id = data.get('id')
+
+            # Retrieve the existing customer object from the database
+            customer = Customer.objects.get(id=customer_id)
+
+            # Update customer fields with data from the request
+            customer.first_name = data.get('first_name', customer.first_name)
+            customer.last_name = data.get('last_name', customer.last_name)
+            customer.email = data.get('email', customer.email)
+            customer.phone = data.get('phone', customer.phone)
+            customer.address = data.get('address', customer.address)
+            customer.debt_amount = data.get('debt_amount', customer.debt_amount)
+
+            customer.save()
+
+            return ApiResponse(200, message="Customer info updated successfully").response()
+        except Exception as e:
+            return ApiResponse(400, message=f"Error: {e}").response()

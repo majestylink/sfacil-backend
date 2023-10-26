@@ -7,6 +7,7 @@ from django.db.models.functions import TruncMonth, TruncYear
 from rest_framework.views import APIView
 # from .models import Order, OrderItem, Variant, Product, Size
 from customer.models import Customer
+from transaction.models import Ledger
 from .serializers import CustomerSerializer
 from product.models import Product
 from .models import PerProduct, OrderedProduct, Order, Invoice
@@ -77,7 +78,15 @@ class DistributorOrderAPIView(APIView):
             customer.remaining_credit -= order.cost
             print(customer.remaining_credit)
             customer.save()
-            return ApiResponse(200, message='success', data=data).response()
+
+            ledger = Ledger.objects.create(
+                customer=customer,
+                description=data.get(f'New order from {customer.first_name} {customer.last_name}'),
+                amount=total_cost,
+                transaction_type='debit'
+            )
+
+            return ApiResponse(200, message='Order created successfully', data=data).response()
         else:
             return ApiResponse(400, message="Amount is above customer's credit unit").response()
 
