@@ -17,9 +17,16 @@ Including another URLconf
 from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.response import Response
+
+
+def home(request):
+    return Response({"success": True, "message": "Hello World🎊❤️"})
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home, name="home"),
     path('api/customers/', include('customer.urls')),
     path('api/purchases/', include('purchase.urls')),
     path('api/products/', include('product.urls')),
