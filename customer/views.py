@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
+
+from utilities.auth import IsInAccountsGroup
 from .models import Customer
 from .serializers import CustomerSerializer
 
@@ -7,8 +9,10 @@ from utilities.response import ApiResponse
 
 
 class CustomerView(APIView):
+    permission_classes = [IsInAccountsGroup]
 
     def get(self, request):
+        print(request.headers)
         customers = Customer.objects.all()
         ser = CustomerSerializer(customers, many=True)
         return ApiResponse(200, message='success', data=ser.data).response()
